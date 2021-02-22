@@ -1,0 +1,47 @@
+.btn-nav {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+    }
+
+    &:hover:after {
+        width: 80%;
+        opacity: 1;
+    }
+}
+.btn-nav:after {
+    display: block;
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    opacity: 0;
+    background-color: #ffe500;
+    -webkit-transition: 0.2s width, 0.3s opacity;
+    transition: 0.2s width, 0.3s opacity;
+}
+
+.btn-sm {
+    font-size: 14px !important;
+}
+
+@media (max-width: 768px) {
+    .btn-nav {
+        margin: auto;
+        color: black !important;
+    }
+    .header-menu--right .btn-primary {
+        margin-top: 1rem;
+    }
+}
