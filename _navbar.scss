@@ -1,0 +1,51 @@
+.navbar.bg-light.navbar-white {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 5px 1rem;
+    .nav-link {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        i {
+            font-size: 1.2rem;
+        }
+
+        &.router-link-exact-active {
+            background-color: $gray-200;
+        }
+    }
+
+    .nav-link.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .nav-item:nth-child(2) .nav-link {
+        position: absolute;
+        background-color: $primary;
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+        i {
+            font-size: 1.5rem;
+        }
+
+        &:active {
+            background: darken($primary, 5%);
+        }
+
+        &.router-link-exact-active {
+            background-color: $primary;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
