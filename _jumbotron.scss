@@ -1,4 +1,8 @@
 .jumbotron {
+    padding: 1rem;
+}
+
+.jumbotron.large {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,6 +14,10 @@
     .brand-text {
         font-family: serif;
         font-size: 3rem;
+
+        @media (min-width: 768px) {
+            font-size: 5rem;
+        }
     }
 
     .leader {
@@ -34,39 +42,5 @@
             height: 50px;
             margin-right: 1rem;
         }
-    }
-}
-.fade {
-    -webkit-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
-    &:not(.show) {
-        opacity: 0;
-    }
-}
-@media (min-width: 768px) {
-    .jumbotron {
-        .brand-text {
-            font-size: 5rem;
-        }
-    }
-}
-
-.animated.loaded {
-    .header {
-        top: 0;
-        opacity: 1;
-    }
-    .brand-text {
-        span {
-            opacity: 1;
-        }
-        sub {
-            opacity: 1;
-        }
-    }
-    .list {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
     }
 }
