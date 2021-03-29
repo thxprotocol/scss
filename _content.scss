@@ -1,0 +1,36 @@
+.region-content {
+    position: relative;
+    color: #000;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .page-title {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    .screen {
+        display: inline;
+        width: 45%;
+        height: auto;
+        margin-right: 5%;
+        margin-top: 3rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.region-content-bottom {
+    min-height: calc(100%-100px);
+}
+
+.btn-signup-back {
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,52 @@
+html,
+body {
+    font-size: 18px;
+    height: 100%;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $gray-400;
+    margin-bottom: 1rem;
+
+    img {
+        width: 40px;
+        height: auto;
+        opacity: 0.6;
+    }
+}
+
+.h4 {
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    border-left: 3px solid $primary;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $primary;
+
+    & + .lead {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        font-weight: normal;
+    }
+}
