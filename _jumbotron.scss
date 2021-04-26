@@ -4,9 +4,9 @@
 
 .jumbotron.large {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
     min-height: 75vh;
     background-color: $yellow;
     position: relative;
@@ -47,6 +47,37 @@
             width: 80px;
             height: 50px;
             margin-right: 1rem;
+        }
+    }
+}
+
+.jumbotron-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    img {
+        display: block;
+        margin: auto;
+        opacity: 0.65;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 3rem;
+        flex-wrap: wrap;
+
+        img {
+            margin-bottom: 1rem;
+
+            &[height='60'] {
+                height: 30px;
+                width: auto;
+            }
+            &[height='30'] {
+                height: 15px;
+                width: auto;
+            }
         }
     }
 }
