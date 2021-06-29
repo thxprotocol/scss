@@ -1,12 +1,11 @@
 .navbar {
-    width: 100%;
     z-index: 1;
-    background-color: white !important;
+    width: 100%;
 
     .header-brand {
         img {
             display: block;
-            width: 40px;
+            width: 55px;
             height: auto;
             margin: auto;
         }
@@ -19,7 +18,7 @@
             text-align: center;
 
             img {
-                width: 55px;
+                width: 75px;
             }
         }
 
@@ -55,6 +54,54 @@
     }
 }
 
+.navbar-light .navbar-nav .nav-link {
+    display: block;
+    position: relative;
+    font-weight: $font-weight-bold;
+    opacity: 1 !important;
+    margin: 0 1rem;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    color: $dark;
+
+    &:focus {
+        box-shadow: none;
+        color: $primary;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+    }
+
+    &:hover {
+        color: $dark;
+    }
+
+    &.router-link-active {
+        color: $primary;
+    }
+
+    &:hover:after,
+    &.router-link-active:after {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+    display: block;
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    opacity: 0;
+    color: $primary;
+    background-color: $primary;
+    -webkit-transition: 0.2s width, 0.3s opacity;
+    transition: 0.2s width, 0.3s opacity;
+}
+
 @media (max-width: 768px) {
     #nav-collapse {
         background: $white;
@@ -69,6 +116,7 @@
             flex: 0;
             border-top: 1px solid $light;
             padding-top: 1rem;
+
             .navbar-nav {
                 flex-direction: row;
                 flex: 1;

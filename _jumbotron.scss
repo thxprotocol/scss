@@ -8,45 +8,18 @@
     align-items: center;
     flex-direction: column;
     min-height: 75vh;
-    background-color: $yellow;
     position: relative;
-
-    margin-top: 58px;
+    padding-top: 3rem;
 
     @media (min-width: 992px) {
-        margin-top: 70px;
+        padding-top: 5rem;
     }
 
     .brand-text {
-        font-family: serif;
-        font-size: 3rem;
+        font-size: 3rem !important;
 
         @media (min-width: 768px) {
-            font-size: 5rem;
-        }
-    }
-
-    .leader {
-        margin-bottom: 0rem;
-    }
-
-    .brand-cta {
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .brand-disclaimer {
-        align-self: flex-end;
-        opacity: 0.5;
-        margin-top: 1rem;
-        font-family: 1rem;
-        display: flex;
-
-        img {
-            display: block;
-            width: 80px;
-            height: 50px;
-            margin-right: 1rem;
+            font-size: 6rem !important;
         }
     }
 }
