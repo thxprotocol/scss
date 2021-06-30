@@ -1,0 +1,29 @@
+.card-logo {
+    display: flex;
+    border: 0;
+    flex: 0 0 120px;
+    background-color: $light;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    img {
+        margin: auto;
+        display: block;
+    }
+
+    &-lg {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+    }
+}
