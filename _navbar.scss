@@ -41,6 +41,32 @@
     }
 }
 
+.page-use-cases.navbar-light .navbar-nav .nav-link {
+    color: $light;
+
+    &:focus {
+        color: $secondary;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+    }
+
+    &:hover {
+        color: $light;
+    }
+
+    &.router-link-active {
+        color: $secondary;
+    }
+
+    &:hover:after,
+    &.router-link-active:after {
+        background-color: $secondary;
+    }
+}
+
 .navbar.fixed {
     position: fixed;
     z-index: 1;

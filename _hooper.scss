@@ -49,3 +49,71 @@ section .hooper-team {
 section .hooper-use-cases {
     height: auto;
 }
+
+.card-metrics-dark {
+    margin-top: 100%;
+    margin-bottom: 1rem;
+
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        margin: 0;
+        position: absolute;
+        top: 25%;
+        right: 0;
+        margin-right: -200px;
+    }
+}
+
+section .hooper-metrics {
+    height: 100%;
+
+    .card {
+        margin-right: 1rem;
+    }
+
+    .hooper-track {
+        height: auto;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        .hooper-list {
+            position: relative;
+            overflow: visible;
+        }
+
+        .hooper-track {
+            height: 100%;
+        }
+
+        .hooper-slide {
+            position: absolute;
+            height: auto;
+
+            .card {
+                width: 400px !important;
+                margin: 0;
+            }
+
+            &:nth-child(1) {
+                bottom: 40%;
+                right: 0;
+                margin-right: 0px;
+            }
+
+            &:nth-child(2) {
+                left: 0;
+                bottom: 30%;
+                margin-left: -350px;
+
+                .card {
+                    width: 450px !important;
+                }
+            }
+
+            &:nth-child(3) {
+                left: 0;
+                bottom: 10%;
+                margin-left: -150px;
+            }
+        }
+    }
+}
