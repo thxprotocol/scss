@@ -41,7 +41,7 @@
     }
 }
 
-.page-use-cases.navbar-light .navbar-nav .nav-link {
+div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
     color: $light;
 
     &:focus {
