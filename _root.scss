@@ -199,26 +199,6 @@ h3,
     }
 }
 
-.bg-bubble {
-    &::before {
-        content: '';
-        display: block;
-        top: 0;
-        right: 0;
-        position: absolute;
-        background: url('assets/img/thx_bubble.png') no-repeat;
-        background-size: contain;
-        background-position: top right;
-        height: 300px;
-        width: 300px;
-
-        @media (min-width: map-get($grid-breakpoints, 'lg')) {
-            height: 600px;
-            width: 600px;
-        }
-    }
-}
-
 .form-control-underlined,
 .form-control-underlined:focus {
     background: transparent;
