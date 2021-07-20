@@ -1,83 +1,54 @@
 .jumbotron {
     padding: 1rem;
-}
-
-.jumbotron.large {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 75vh;
-    background-color: $yellow;
+    min-height: 300px;
     position: relative;
+    padding-top: 8rem;
 
-    margin-top: 58px;
+    @media (min-width: map-get($grid-breakpoints, 'sm')) {
+        padding-top: 10rem;
 
-    @media (min-width: 992px) {
-        margin-top: 70px;
-    }
-
-    .brand-text {
-        font-family: serif;
-        font-size: 3rem;
-
-        @media (min-width: 768px) {
-            font-size: 5rem;
+        .brand-text {
+            font-size: 2rem !important;
         }
     }
 
-    .leader {
-        margin-bottom: 0rem;
-    }
+    @media (min-width: map-get($grid-breakpoints, 'md')) {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        min-height: 900px;
 
-    .brand-cta {
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-    }
-
-    .brand-disclaimer {
-        align-self: flex-end;
-        opacity: 0.5;
-        margin-top: 1rem;
-        font-family: 1rem;
-        display: flex;
-
-        img {
-            display: block;
-            width: 80px;
-            height: 50px;
-            margin-right: 1rem;
+        .brand-text {
+            font-size: 2rem !important;
         }
     }
-}
 
-.jumbotron-footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        min-height: 900px;
 
-    img {
-        display: block;
-        margin: auto;
-        opacity: 0.65;
+        .brand-text {
+            font-size: 3rem !important;
+        }
     }
 
-    @media (max-width: 768px) {
-        padding-top: 3rem;
-        flex-wrap: wrap;
+    @media (min-width: map-get($grid-breakpoints, 'xl')) {
+        padding-top: 0;
+        min-height: 1060px;
 
-        img {
-            margin-bottom: 1rem;
+        + .container {
+            margin-bottom: 5rem;
+        }
 
-            &[height='60'] {
-                height: 30px;
-                width: auto;
-            }
-            &[height='30'] {
-                height: 15px;
-                width: auto;
-            }
+        .brand-text {
+            font-size: 3vw !important;
+        }
+
+        .brand-image {
+            position: absolute;
+            right: 0;
         }
     }
 }
