@@ -129,6 +129,11 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
     padding: 0.5rem 1rem;
 }
 
+.nav-link-plain a::after {
+    content: unset !important;
+    display: none !important;
+}
+
 @media (max-width: 768px) {
     #nav-collapse {
         background: $white;
