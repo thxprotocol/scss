@@ -205,11 +205,11 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
         }
 
         &:active {
-            background: darken($primary, 5%);
+            background: darken($secondary, 5%);
         }
 
         &.router-link-exact-active {
-            background-color: $primary;
+            background-color: $secondary;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
     }
