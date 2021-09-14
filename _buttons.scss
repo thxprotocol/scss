@@ -54,6 +54,8 @@
 }
 
 .btn-remove {
+    height: 31px;
+    width: 31px;
     background-color: transparent;
     color: $gray-400;
     border: 1px solid $gray-400;
@@ -68,5 +70,79 @@
 
     i {
         margin: 0;
+    }
+}
+
+.btn-tab {
+    flex: 1;
+    color: white;
+    background-color: $primary;
+    margin: 0 1rem;
+    background-size: contain;
+
+    img {
+        height: 20px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, 'md')) {
+        padding: 1.5rem 2rem;
+
+        img {
+            margin-bottom: 0.5rem;
+            height: 30px;
+        }
+    }
+
+    &:not(.router-link-exact-active) {
+        background-image: none !important;
+        background-color: white;
+        color: $primary;
+    }
+
+    &.router-link-exact-active:hover {
+        color: white;
+    }
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.btn-menu {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background: $darker;
+    border-radius: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(260px);
+    top: 50%;
+    margin-top: -25px;
+
+    &.collapsed {
+        left: 0;
+        margin-left: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:hover:focus {
+        color: white;
+        text-decoration: none;
+    }
+
+    i {
+        margin: 0;
+        font-size: 1.1rem;
+        margin-right: 10px;
     }
 }
