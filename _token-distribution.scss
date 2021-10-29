@@ -1,14 +1,25 @@
-.token-distribution {
-    background-color: #f8f9fa;
+.table-token-allocation {
+    min-width: 1040px;
+    width: 100%;
 
-    .dist-table .row {
-        height: 2.5rem;
-    }
-    .innerCard {
-        background: linear-gradient(0deg, #fafafa 70%, #ffe500 60%);
-    }
-    .table-footer {
-        background-color: #212529;
-        border-radius: 7px;
+    tbody tr {
+        background-color: white;
+        transition: ease-in-out background-color 0.2s;
+
+        &:hover {
+            background-color: $yellow !important;
+        }
+
+        &:last-of-type {
+            td:first-child {
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+            }
+
+            td:last-child {
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+            }
+        }
     }
 }
