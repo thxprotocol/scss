@@ -15,6 +15,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+$gray-1000: #16131b !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -29,6 +30,7 @@ $grays: map-merge(
         '700': $gray-700,
         '800': $gray-800,
         '900': $gray-900,
+        '1000': $gray-1000
     ),
     $grays
 );
