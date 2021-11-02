@@ -24,7 +24,11 @@ body {
 }
 
 .container-pricing-max-height {
-    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+    max-height: none;
+    @media (min-width: map-get($grid-breakpoints, 'md')) {
+        max-height: 900px;
+    }
+    @media (min-width: map-get($grid-breakpoints, 'xl')) {
         max-height: 800px;
     }
 }
