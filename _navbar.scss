@@ -134,7 +134,7 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
     display: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: map-get($grid-breakpoints, 'lg')) {
     #nav-collapse {
         background: $white;
         color: $dark;
@@ -148,6 +148,12 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
             flex: 0;
             border-top: 1px solid $light;
             padding-top: 1rem;
+            flex-wrap: wrap;
+
+            a {
+                flex: 0 100%;
+                margin: 0.5rem !important;
+            }
 
             .navbar-nav {
                 flex-direction: row;

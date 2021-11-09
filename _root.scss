@@ -79,7 +79,13 @@ h3,
 }
 
 .font-size-l {
-    font-size: 3.2rem !important;
+    font-size: 2rem !important;
+    @media (min-width: map-get($grid-breakpoints, 'lg')) {
+        font-size: 2.5rem !important;
+    }
+    @media (min-width: map-get($grid-breakpoints, 'xl')) {
+        font-size: 3.2rem !important;
+    }
 }
 
 .font-size-xl {

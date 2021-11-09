@@ -1,77 +1,48 @@
 .jumbotron {
-    padding: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    min-height: 300px;
-    position: relative;
-    padding-top: 8rem;
-    
-    .brand-image {   
-        width: 100%;
-        max-height: 500px;
-        padding: .5rem;
-        border-radius: 1rem !important; 
-    }
+    padding: 0 !important;
 
-    @media (min-width: map-get($grid-breakpoints, 'sm')) {
-        padding-top: 10rem;
-
-        .brand-text {
-            font-size: 2rem !important;
-        }
-
-        .brand-image {
-            position: relative;
-            height: auto;
-            width: 100%;
-            max-height: none;
-        }
-    }
-
-    @media (min-width: map-get($grid-breakpoints, 'md')) {
-        padding-top: 10rem;
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 8rem;
         padding-bottom: 5rem;
-        min-height: 900px;
 
-        .brand-text {
-            font-size: 2rem !important;
-        } 
-        
+        @media (min-width: map-get($grid-breakpoints, 'lg')) {
+            padding-top: 5rem;
+            padding-bottom: 0;
+        }
     }
 
-    @media (min-width: map-get($grid-breakpoints, 'lg')) {
-        min-height: 900px;
-
-        .brand-text {
-            font-size: 3rem !important;
-        }
-
-        .brand-image {
-            width: auto;
-            height: 800px;
-        }
-
+    .brand-intro {
+        display: flex;
+        align-items: center;
     }
 
-    @media (min-width: map-get($grid-breakpoints, 'xl')) {
-        padding-top: 0;
-        min-height: 1060px;
+    .brand-text {
+        font-size: 3rem !important;
 
-        + .container {
-            margin-bottom: 5rem;
+        @media (min-width: map-get($grid-breakpoints, 'lg')) {
+            font-size: 3.9rem !important;
         }
+    }
 
-        .brand-text {
-            font-size: 3vw !important;
-        }
+    .brand-demo {
+        img {
+            padding: 1rem;
+            border-radius: 1rem !important;
+            width: 100%;
+            height: auto;
+            pointer-events: none;
+            user-select: none;
 
-        .brand-image {
-            position: absolute;
-            left: 0;
-            top: -100px;
-            height: 1050px; 
+            @media (min-width: map-get($grid-breakpoints, 'lg')) {
+                margin-top: 100px;
+                margin-bottom: -130px;
+                width: auto;
+            }
         }
     }
 }
