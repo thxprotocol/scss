@@ -7,12 +7,26 @@
     min-height: 300px;
     position: relative;
     padding-top: 8rem;
+    
+    .brand-image {   
+        width: 100%;
+        max-height: 500px;
+        padding: .5rem;
+        border-radius: 1rem !important; 
+    }
 
     @media (min-width: map-get($grid-breakpoints, 'sm')) {
         padding-top: 10rem;
 
         .brand-text {
             font-size: 2rem !important;
+        }
+
+        .brand-image {
+            position: relative;
+            height: auto;
+            width: 100%;
+            max-height: none;
         }
     }
 
@@ -23,7 +37,8 @@
 
         .brand-text {
             font-size: 2rem !important;
-        }
+        } 
+        
     }
 
     @media (min-width: map-get($grid-breakpoints, 'lg')) {
@@ -32,6 +47,12 @@
         .brand-text {
             font-size: 3rem !important;
         }
+
+        .brand-image {
+            width: auto;
+            height: 800px;
+        }
+
     }
 
     @media (min-width: map-get($grid-breakpoints, 'xl')) {
@@ -48,7 +69,9 @@
 
         .brand-image {
             position: absolute;
-            right: 0;
+            left: 0;
+            top: -100px;
+            height: 1050px; 
         }
     }
 }
