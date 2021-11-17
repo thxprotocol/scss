@@ -25,7 +25,7 @@
     }
 
     .navbar-nav-right {
-        flex: 0;
+        flex: 0 auto;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -134,7 +134,7 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
     display: none !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: map-get($grid-breakpoints, 'lg')) {
     #nav-collapse {
         background: $white;
         color: $dark;
@@ -148,6 +148,12 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
             flex: 0;
             border-top: 1px solid $light;
             padding-top: 1rem;
+            flex-wrap: wrap;
+
+            a {
+                flex: 0 100%;
+                margin: 0.5rem !important;
+            }
 
             .navbar-nav {
                 flex-direction: row;
@@ -211,6 +217,25 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
         &.router-link-exact-active {
             background-color: $secondary;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.page-token {
+    .navbar-nav .nav-link {
+        color: #fff;
+        font-weight: 400;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+.bg-white.shadow .page-token {
+    .navbar-nav .nav-link {
+        color: $dark;
+        font-weight: 700;
+        &:hover {
+            color: $dark;
         }
     }
 }
