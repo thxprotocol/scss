@@ -5,13 +5,11 @@
 
     &.large {
         min-height: 85vh;
+        align-items: center;
     }
 
     .container {
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        align-items: center;
+        margin: auto;
         padding-top: 8rem;
         padding-bottom: 5rem;
 
@@ -48,6 +46,16 @@
                 margin-bottom: -130px;
                 width: auto;
             }
+        }
+    }
+
+    .calendly-widget {
+        width: 100%;
+        min-width: 320px;
+        height: 620px;
+
+        @media (min-width: map-get($grid-breakpoints, 'lg')) {
+            height: 700px;
         }
     }
 }
