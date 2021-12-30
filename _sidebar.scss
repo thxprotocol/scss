@@ -49,8 +49,8 @@
     opacity: 0.5;
 }
 
-.navbar-light .navbar-nav .nav-link.router-link-active,
-.navbar-light .navbar-nav .nav-link.router-link-active i {
+.navbar-light .navbar-nav .nav-link.router-link-exact-active,
+.navbar-light .navbar-nav .nav-link.router-link-exact-active i {
     color: $secondary;
     opacity: 1;
 }

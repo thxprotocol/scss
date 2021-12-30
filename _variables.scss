@@ -30,7 +30,7 @@ $grays: map-merge(
         '700': $gray-700,
         '800': $gray-800,
         '900': $gray-900,
-        '1000': $gray-1000
+        '1000': $gray-1000,
     ),
     $grays
 );
@@ -767,15 +767,15 @@ $dropdown-divider-margin-y: $nav-divider-margin-y !default;
 $dropdown-box-shadow: 0 0.5rem 1rem rgba($black, 0.175) !default;
 
 $dropdown-link-color: $gray-900 !default;
-$dropdown-link-hover-color: darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg: $gray-200 !default;
+$dropdown-link-hover-color: white !default;
+$dropdown-link-hover-bg: $primary !default;
 
 $dropdown-link-active-color: $component-active-color !default;
 $dropdown-link-active-bg: $component-active-bg !default;
 
 $dropdown-link-disabled-color: $gray-500 !default;
 
-$dropdown-item-padding-y: 0.25rem !default;
+$dropdown-item-padding-y: 0.5rem !default;
 $dropdown-item-padding-x: 1.5rem !default;
 
 $dropdown-header-color: $gray-600 !default;
