@@ -221,7 +221,8 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
     }
 }
 
-.page-token {
+.page-token,
+.page-demo {
     .navbar-nav .nav-link {
         color: #fff;
         font-weight: 400;
@@ -230,7 +231,8 @@ div:not(.bg-white) > .page-use-cases.navbar-light .navbar-nav .nav-link {
         }
     }
 }
-.bg-white.shadow .page-token {
+.bg-white.shadow .page-token,
+.bg-white.shadow .page-demo {
     .navbar-nav .nav-link {
         color: $dark;
         font-weight: 700;
