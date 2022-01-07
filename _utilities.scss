@@ -21,3 +21,9 @@
 .bg-gray-1000 {
     background-color: $gray-1000;
 }
+.text-truncate {
+    width: 150px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
