@@ -1,3 +1,6 @@
+.pt-10 {
+    padding-top: 5rem;
+}
 .font-size-10 {
     font-size: 5rem !important;
 
@@ -26,4 +29,8 @@
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
 }
