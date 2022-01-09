@@ -1,4 +1,6 @@
 .identicon {
+    position: fixed;
+    z-index: 1;
     width: 50px;
     height: 50px;
     border-radius: 0.25rem;
@@ -7,8 +9,11 @@
     align-items: center;
     padding: 0;
     justify-content: center;
-    position: fixed;
     right: 10px;
     top: 10px;
     border: 0;
+}
+
+.is-alert-shown .identicon {
+    top: 63px;
 }
