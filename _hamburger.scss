@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 1;
     top: 10px;
-    left: 10px;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,4 @@
     &.not-collapsed {
         margin-left: 260px;
     }
-}
-.is-alert-shown .btn-menu {
-    top: 63px;
 }
