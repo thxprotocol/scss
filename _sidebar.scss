@@ -4,7 +4,7 @@ body {
 }
 
 @media (min-width: map-get($grid-breakpoints, 'md')) {
-    .not-collapsed ~ .sidebar-sibling {
+    .sidebar-sibling {
         margin-left: 260px;
     }
 }
