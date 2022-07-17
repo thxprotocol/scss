@@ -62,8 +62,11 @@
 }
 
 .jumbotron-header {
-    min-height: auto;
+    min-height: 360px;
     max-height: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     height: auto;
     background-size: cover;
     background-position: center bottom;
